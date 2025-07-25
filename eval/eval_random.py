@@ -1,8 +1,8 @@
 import numpy as np
-from game2048.gym_2048 import Game2048Env  # Your environment wrapper
+from game2048.gym_2048 import Game2048Env
 
 EPISODES = 100
-MAX_STEPS = 50000  # Prevents infinite loops
+MAX_STEPS = 5000 
 
 def run_random_agent(episodes=EPISODES):
     env = Game2048Env()
