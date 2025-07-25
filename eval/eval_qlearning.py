@@ -1,7 +1,7 @@
 import pickle
 from collections import defaultdict, Counter
 import numpy as np
-from game2048.gym_2048 import Game2048Env  # Your Gymnasium wrapper
+from game2048.gym_2048 import Game2048Env
 
 ACTIONS_MAP = {
     0: "UP",
