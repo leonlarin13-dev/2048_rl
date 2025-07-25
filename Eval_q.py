@@ -14,7 +14,7 @@ def state_to_str(state):
     return tuple(state.flatten())
 
 def main(render=True, episodes=10):
-    q_table_file = 'q_table_2048_plotting.pkl'       #here file name
+    q_table_file = 'q_table_2048.pkl'       #here file name
     with open(q_table_file, 'rb') as f:
         loaded = pickle.load(f)
     q_table = defaultdict(float, loaded)
