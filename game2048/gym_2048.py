@@ -1,7 +1,7 @@
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
-from game2048.logic import *  # Your extended logic.py with valid move handling
+from game2048.logic import *  
 
 class Game2048Env(gym.Env):
     metadata = {'render_modes': ['human'], 'render_fps': 4}
