@@ -1,4 +1,3 @@
-# 2048_rl
 # 2048 RL  
 Reinforcement learning agents trained to play the game **2048** using **Q-Learning** and **Monte Carlo Control**.
 
