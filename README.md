@@ -1,6 +1,43 @@
 # 2048_rl
-works with python 3.12
-install requirements from requirements.txt
+# 2048 RL  
+Reinforcement learning agents trained to play the game **2048** using **Q-Learning** and **Monte Carlo Control**.
 
+## Requirements
 
-to reproduce simply run either training script train_2048_qlearning.py or train_montecarlo.py, which will place a .pkl fil in the directory. To evaluate either agent run the corresponding evaluate script Eval_q.py for q learning or evaluate_montecarlo.py for monte carlo agents.
+- Python 3.12  
+- Install dependencies via:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Training Agents
+
+Training scripts are located in the `train` directory.
+
+Each script will output a `.pkl` file containig the Q-values of the trained models.
+
+## Evaluating Agents
+
+Evaluation scripts are located in the `eval` directory.
+
+## Project Structure
+
+```
+.
+├── eval/
+│   ├── eval_montecarlo.py
+│   ├── eval_qlearning.py
+│   └── eval_montecarlo.py
+├── game2048/
+│   ├── gym_2048.py
+│   ├── logic.py
+│   └── terminal_play2048.py
+├── train/
+│   ├── train_qlearning.py
+│   └── train_montecarlo.py
+├── requirements.txt
+└── README.md
+```
+
+---
