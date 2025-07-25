@@ -30,7 +30,7 @@ def run_random_agent(episodes=EPISODES):
     avg_reward = total_rewards / episodes
     avg_max_tile = sum(max_tiles) / episodes
 
-    print("\n📊 Random Policy Evaluation:")
+    print("\nRandom Policy Evaluation:")
     print(f"Average Reward:   {avg_reward:.2f}")
     print(f"Average Max Tile: {avg_max_tile:.2f}")
     env.close()
