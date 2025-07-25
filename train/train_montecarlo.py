@@ -3,7 +3,7 @@ import pickle
 import random
 import numpy as np
 from collections import defaultdict
-from game2048.gym_2048 import Game2048Env  # Your updated Gym wrapper
+from game2048.gym_2048 import Game2048Env  
 
 # Hyperparameters
 epsilon = 1.0
