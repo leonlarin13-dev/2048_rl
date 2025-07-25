@@ -5,7 +5,7 @@ from logic import *
 
 
 def print_board(mat):
-    os.system('cls' if os.name == 'nt' else 'clear')  # Clear screen for better UI
+    os.system('cls' if os.name == 'nt' else 'clear')  
     print("2048 Game - Use W (Up), A (Left), S (Down), D (Right). Press Q to quit.\n")
     for row in mat:
         print("+------" * 4 + "+")
