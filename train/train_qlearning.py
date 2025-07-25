@@ -12,7 +12,7 @@ gamma = 0.98
 epsilon = 1.0
 epsilon_min = 0.2
 epsilon_decay = 0.99995
-episodes = 500
+episodes = 50000
 max_steps_per_episode = 500
 
 q_table_file = 'q_table_2048.pkl'
@@ -85,12 +85,12 @@ def main():
 
         # Logging
         if (ep + 1) % 100 == 0:
-            reward_log.append((ep + 1, total_reward))
+            #reward_log.append((ep + 1, total_reward))
             print(f"Ep {ep+1:5d} | Total Reward: {total_reward:6.2f} | Final Score: {episode_score} | "
                   f"Invalid Moves: {invalid_moves} | Epsilon: {epsilon:.4f}")
 
         # Save checkpoint every 5000 episodes
-        if (ep + 1) % 5000000 == 0:
+        if (ep + 1) % 5000 == 0:
             checkpoint_file = f'q_table_checkpoint_forplot_{ep+1}.pkl'
             with open(checkpoint_file, 'wb') as f:
                 pickle.dump(dict(q_table), f)
@@ -101,12 +101,12 @@ def main():
         pickle.dump(dict(q_table), f)
     print(f"Training complete. Q-table saved to {q_table_file}")
 
-    with open('reward_log_qlearning.pkl', 'wb') as f:
-        pickle.dump(reward_log, f)
-    print("Reward log saved to `reward_log_qlearning.pkl`.")
+    #with open('reward_log_qlearning.pkl', 'wb') as f:
+    #    pickle.dump(reward_log, f)
+    #print("Reward log saved to `reward_log_qlearning.pkl`.")
 
     env.close()
 
 if __name__ == "__main__":
-    reward_log = []
+    #reward_log = []
     main()
