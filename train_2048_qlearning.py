@@ -15,7 +15,7 @@ epsilon_decay = 0.99995
 episodes = 50000
 max_steps_per_episode = 500
 
-q_table_file = 'q_table_2048_plotting.pkl'
+q_table_file = 'q_table_2048.pkl'
 
 def state_to_str(state):
     # Use tuple for faster hashing and uniqueness
