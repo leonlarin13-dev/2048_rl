@@ -87,7 +87,7 @@ def main():
 
         if (ep + 1) % 100 == 0:
             total_reward = sum(x[2] for x in episode)
-            reward_log.append((ep + 1, total_reward))
+            #reward_log.append((ep + 1, total_reward))
             print(f"Episode {ep+1:>5}: Total Reward = {total_reward:.2f}, Epsilon = {epsilon:.4f}")
 
 
@@ -95,13 +95,13 @@ def main():
         pickle.dump(dict(q_table), f)
     print(f"\nQ-table saved to `{q_table_file}`.")
 
-    with open('reward_log_2048.pkl', 'wb') as f:
-        pickle.dump(reward_log, f)
-    print("Reward log saved to `reward_log_2048.pkl`.")
+    #with open('reward_log_2048.pkl', 'wb') as f:
+    #    pickle.dump(reward_log, f)
+    #print("Reward log saved to `reward_log_2048.pkl`.")
 
 
     env.close()
 
 if __name__ == "__main__":
-    reward_log = []
+    #reward_log = []
     main()
