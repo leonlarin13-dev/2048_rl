@@ -9,7 +9,7 @@ from game2048.gym_2048 import Game2048Env  # Your updated Gym wrapper
 epsilon = 1.0
 epsilon_min = 0.2
 epsilon_decay = 0.99995
-episodes = 500
+episodes = 50000
 max_steps_per_episode = 500
 gamma = 0.98
 
